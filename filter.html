@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/filter.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
+  </head>
+  <body>
+    <section class="filter_top flex">
+      <h3>Filter</h3>
+    </section>
+    <section class="filter_main">
+      <div class="f_sec f_sec--toggle">
+        <div class="f_row flex">
+          <h4>Filter</h4>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <div class="f_sec f_sec--age">
+        <div class="f_row flex">
+          <h4>Age</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="filter_drop flex">
+          <input
+            type="range"
+            value="24"
+            min="1"
+            max="100"
+            oninput="this.nextElementSibling.value = this.value"
+          />&nbsp;
+          <output>24</output>
+        </div>
+      </div>
+      <div class="f_sec f_sec--sex">
+        <div class="f_row flex">
+          <h4>Gender</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="filter_drop flex">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label><br />
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label><br />
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <div class="f_sec">
+        <div class="f_row flex">
+          <h4>Tags</h4>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+
+        <div class="filter_drop flex">
+          <input type="text" />
+        </div>
+      </div>
+    </section>
+
+    <section class="filter_bottom"></section>
+    <script src="./js/filter.js" charset="utf-8"></script>
+  </body>
+</html>

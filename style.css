@@ -1,0 +1,24 @@
+body {
+  max-width: 400px;
+  margin: auto;
+  height: 600px;
+  position: relative;
+}
+
+section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.bottom_nav .nav_item a {
+  color: white;
+}

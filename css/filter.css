@@ -1,0 +1,134 @@
+body {
+  border-style: solid;
+  border-width: thin;
+}
+
+.filter_top {
+  position: relative;
+  height: 60px;
+  background-color: black;
+  color: white;
+}
+
+.filter_top a {
+  position: absolute;
+  margin-left: 10px;
+}
+
+.filter_top h3 {
+  margin: auto;
+}
+.filter_top .back_arrow {
+  width: 30px;
+  margin: 5px;
+}
+
+.filter_main .f_sec {
+  padding: 0 10px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.filter_main .f_sec--toggle {
+  background-color: lightgray;
+}
+
+.filter_main .f_sec .f_row {
+  justify-content: space-between;
+}
+
+.filter_main .filter_drop {
+  display: none;
+  padding-bottom: 20px;
+}
+
+.filter_main .filter_drop.show {
+  display: flex;
+}
+
+.filter_main .f_sec--age input {
+  display: block;
+  width: 300px;
+  margin-right: 20px;
+}
+
+.filter_main .f_sec--sex label {
+  margin-right: 20px;
+}
+
+.filter_bottom {
+  height: 50px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+}
+
+.filter_bottom h3 {
+  text-align: center;
+  color: white;
+  line-height: 50px;
+  margin: auto;
+}
+
+/* Toggle switch button  */
+.switch {
+  position: relative;
+  display: inline-block;
+  /* width: 60px;
+  height: 34px; */
+  width: 45px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  /* left: 4px; */
+  /* bottom: 4px; */
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

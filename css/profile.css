@@ -1,0 +1,51 @@
+body {
+  border-style: solid;
+}
+
+.selfies a {
+  position: absolute;
+}
+.selfies img.back_arrow {
+  width: 30px;
+  margin: 5px;
+}
+
+.selfies img {
+  width: 100%;
+}
+
+section.description {
+  width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+h4 {
+  margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+section.chat_button {
+  background-color: black;
+  color: white;
+  height: 50px;
+  border-radius: 20px;
+  justify-content: center;
+  font-size: 1.5em;
+  bottom: 0;
+  position: absolute;
+}
+section.chat_button i {
+  margin-right: 20px;
+}
+section.chat_button p {
+  text-align: center;
+  line-height: 50px;
+  margin: 0;
+}
+section.chat_button a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
