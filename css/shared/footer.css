@@ -1,0 +1,22 @@
+.bottom_nav {
+  background-color: black;
+  color: white;
+  height: 80px;
+  position: sticky;
+  bottom: 0;
+  justify-content: space-around;
+}
+
+.bottom_nav .nav_item {
+  text-align: center;
+}
+
+.bottom_nav .nav_item i {
+  font-size: 2em;
+}
+
+.bottom_nav .nav_item p {
+  font-size: 0.8em;
+  margin-top: 5px;
+  margin-bottom: 0;
+}

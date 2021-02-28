@@ -1,0 +1,22 @@
+.top {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.top h2 {
+  margin-top: 0;
+}
+
+.selections {
+  height: 100%;
+}
+.selections div {
+  padding: 10px 0;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}

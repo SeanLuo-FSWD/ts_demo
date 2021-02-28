@@ -6,23 +6,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./css/grid.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="./css/shared/footer.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
   </head>
   <body>
     <section class="header flex">
-      <h2>Explore: Feeds</h2>
+      <h2>Explore: Posts</h2>
+
       <div class="filter">
+        <i class="fas fa-plus-square new_post" style="margin-right: 10px;"></i>
         <a href="filter.html?from=index"><i class="fas fa-filter"></i></a>
       </div>
     </section>
-    <section class="post_feed"></section>
+    <section class="create_post">
+        <label>Title:</label><br />
+        <input type="text"/><br />
+        <label>Description</label><br />
+        <textarea></textarea><br />
+        <label>Upload files</label>
+        <input type="file" id="myFile" name="filename"></label></label>
+        <input type="submit" value="Submit" />
+    </section>
+    <section class="post_feed">
+      <div class="post">
+        <div class="header_wrapper flex">
+          <a href="profile.html?from=post">
+          <img src="./assets/avatars/3.png" alt=""></a>
+          <h2 class="title">Tonight's dinner</h2>
+        </div>
+        <div class="attachment">
+          <img src="./assets/posts/seafood.jpeg" alt="" />
+        </div>
+        <div class="desc">
+          Crabs, shrimps, and lobsters in the newest opened seafood restaurant
+          on Commercial street.
+        </div>
+
+        <div class="likes flex">
+          <div class="nlikes">
+            <i class="fas fa-thumbs-up"></i>
+            <span class="like_n">27</span>
+          </div>
+          <div class="ncomments"></div>
+        </div>
+
+        <div class="comments">
+          <div class="comment flex">
+            <div class="user_icon">
+              <img src="./assets/avatars/0.png" alt="" />
+            </div>
+            <div class="user_content">
+              <p class="u_name">u_name1</p>
+              <p class="u_text">Hell yeah seafood!</p>
+            </div>
+          </div>
+          <div class="comment flex">
+            <div class="user_icon">
+              <img src="./assets/avatars/1.png" alt="" />
+            </div>
+            <div class="user_content">
+              <p class="u_name">u_name2</p>
+              <p class="u_text">Good food and good price</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="like_comment">
+          <div class="interaction flex">
+            <div class="tolike liking">
+              <i class="far fa-thumbs-up"></i>
+              Like
+            </div>
+            <div class="tocomment">
+              <i class="far fa-comment-alt"></i>
+              Comment
+            </div>
+          </div>
+          <div class="commenting">
+            <textarea></textarea><button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+                <div class="header_wrapper flex">
+                  <a href="profile.html?from=post">
+          <img src="./assets/avatars/2.png" alt=""></a>
+          <h2 class="title">Morning hike</h2>
+        </div>
+        <div class="attachment">
+          <img src="./assets/posts/hiking.webp" alt="" />
+        </div>
+        <div class="desc">Follow me for best hiking places in Vancouver</div>
+
+        <div class="likes flex">
+          <div class="nlikes">
+            <i class="fas fa-thumbs-up"></i>
+            <span class="like_n">78</span>
+          </div>
+          <div class="ncomments"></div>
+        </div>
+
+        <div class="comments">
+          <div class="comment flex">
+            <div class="user_icon">
+              <img src="./assets/avatars/0.png" alt="" />
+            </div>
+            <div class="user_content">
+              <p class="u_name">u_name2</p>
+              <p class="u_text">nice view</p>
+            </div>
+          </div>
+          <div class="comment flex">
+            <div class="user_icon">
+              <img src="./assets/avatars/1.png" alt="" />
+            </div>
+            <div class="user_content">
+              <p class="u_name">u_name4</p>
+              <p class="u_text">where is that?</p>
+            </div>
+          </div>
+          <div class="comment flex">
+            <div class="user_icon">
+              <img src="./assets/avatars/1.png" alt="" />
+            </div>
+            <div class="user_content">
+              <p class="u_name">u_name1</p>
+              <p class="u_text">been there before</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="like_comment">
+          <div class="interaction flex">
+            <div class="tolike liking">
+              <i class="far fa-thumbs-up"></i>
+              Like
+            </div>
+            <div class="tocomment">
+              <i class="far fa-comment-alt"></i>
+              Comment
+            </div>
+          </div>
+          <div class="commenting">
+            <textarea></textarea><button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="post">
+
+        <div class="header_wrapper flex">
+                            <a href="profile.html?from=post">
+          <img src="./assets/avatars/1.png" alt=""></a>
+          <h2 class="title">XYZ company</h2>
+        </div>
+        <div class="attachment">
+          <img src="./assets/posts/hiring.webp" alt="" />
+        </div>
+        <div class="desc">We are hiring, come work in our downtown office</div>
+
+        <div class="likes flex">
+          <div class="nlikes">
+            <i class="fas fa-thumbs-up"></i>
+            <span class="like_n">55</span>
+          </div>
+          <div class="ncomments"></div>
+        </div>
+
+        <div class="comments">
+          <div class="comment flex">
+            <div class="user_icon">
+              <img src="./assets/avatars/0.png" alt="" />
+            </div>
+            <div class="user_content">
+              <p class="u_name">u_name1</p>
+              <p class="u_text">Just got interviewed today</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="like_comment">
+          <div class="interaction flex">
+            <div class="tolike liking">
+              <i class="far fa-thumbs-up"></i>
+              Like
+            </div>
+            <div class="tocomment">
+              <i class="far fa-comment-alt"></i>
+              Comment
+            </div>
+          </div>
+          <div class="commenting">
+            <textarea></textarea><button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="bottom_nav flex">
       <div class="nav_item">
         <a href="index.html">

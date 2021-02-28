@@ -1,0 +1,107 @@
+.header {
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 0 20px;
+}
+
+.header .filter i {
+  font-size: 2em;
+  color: white;
+}
+
+.create_post {
+  display: none;
+}
+
+.create_post.visible {
+  display: block;
+}
+
+.post {
+  width: 350px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+}
+
+.post .desc {
+  margin-top: 10px;
+}
+.post .attachment img {
+  width: 100%;
+}
+
+.post .header_wrapper img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.post .likes {
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.post .comments .user_icon img {
+  width: 35px;
+  height: 35px;
+}
+
+.post .comments .user_icon {
+  align-self: flex-start;
+}
+
+.post .comments {
+  margin-top: 10px;
+  display: none;
+}
+
+.post .comments.visible {
+  display: block;
+}
+
+.post .comments .comment {
+  margin: 10px 0;
+}
+
+.post .comment .user_content {
+  padding-left: 10px;
+  width: 100%;
+  background-color: whitesmoke;
+}
+.post .comment .user_content .u_name {
+  margin: 0px;
+  font-weight: bold;
+}
+
+.post .comment .user_content .u_text {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.post .like_comment .interaction {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post .like_comment .commenting {
+  display: none;
+  margin-top: 10px;
+}
+
+.post .like_comment .commenting.visible {
+  display: flex;
+}
+
+.post .like_comment .commenting textarea {
+  width: 100%;
+}

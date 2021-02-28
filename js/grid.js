@@ -1,11 +1,11 @@
 function generate_users() {
   let grid_string = "";
 
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 40; i++) {
     let card = `
 
             <div class="profile_card ">
-                <a href="profile.html">
+                <a href="profile.html?from=grid">
                 <img src="./assets/avatars/${Math.floor(
                   Math.random() * Math.floor(4)
                 )}.png" alt="">

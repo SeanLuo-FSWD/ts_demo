@@ -45,7 +45,9 @@ section.chat_button p {
   margin: 0;
 }
 section.chat_button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
   width: 100%;
-  height: 100%;
-  position: absolute;
 }

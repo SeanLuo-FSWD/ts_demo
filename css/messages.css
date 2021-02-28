@@ -1,0 +1,51 @@
+.top {
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: black;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.top h2 {
+  margin-top: 0;
+}
+
+.chats {
+  height: 100%;
+}
+.chats .preview {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.chat {
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  margin-top: 5px;
+  padding-top: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: thin;
+  width: 100%;
+}
+
+.chat .preview .msg_preview {
+  margin-bottom: 5px;
+}
+
+.chat .top_row {
+  justify-content: space-between;
+}
+
+.chat .top_row h4 {
+  margin: 0;
+}
+
+.chat .top_row p {
+  margin: 0;
+}
+.chat img {
+  width: 70px;
+  height: 70px;
+}
