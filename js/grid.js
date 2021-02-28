@@ -5,7 +5,7 @@ function generate_users() {
     let card = `
 
             <div class="profile_card ">
-                <a href="profile.html?from=grid">
+                <a class="clickable" href="profile.html?from=grid">
                 <img src="./assets/avatars/${Math.floor(
                   Math.random() * Math.floor(4)
                 )}.png" alt="">

@@ -22,3 +22,7 @@ section {
 .bottom_nav .nav_item a {
   color: white;
 }
+
+.clickable:hover {
+  cursor: pointer;
+}

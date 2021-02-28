@@ -89,7 +89,7 @@ $(document).ready(function () {
             <i class="fas fa-thumbs-up"></i>
             <span class="like_n">0</span>
           </div>
-          <div class="ncomments"></div>
+          <div class="ncomments clickable"></div>
         </div>
 
         <div class="comments">
@@ -98,11 +98,11 @@ $(document).ready(function () {
 
         <div class="like_comment">
           <div class="interaction flex">
-            <div class="tolike liking">
+            <div class="tolike liking clickable">
               <i class="far fa-thumbs-up"></i>
               Like
             </div>
-            <div class="tocomment">
+            <div class="tocomment clickable">
               <i class="far fa-comment-alt"></i>
               Comment
             </div>

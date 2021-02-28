@@ -1,0 +1,1 @@
+Just showing some features, not focused on UX/UI or design.

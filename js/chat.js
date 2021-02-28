@@ -4,15 +4,18 @@ $(document).ready(function () {
   const myParam = urlParams.get("from");
 
   if (myParam == "messages") {
-    $(".chat_header").prepend(`              <a href="messages.html">
+    $(".chat_header")
+      .prepend(`              <a class="clickable" href="messages.html">
       <img class="back_arrow" src="./assets/icons/back_arrow.png"></img>
     </a>`);
   } else if (myParam == "grid") {
-    $(".chat_header").prepend(`              <a href="profile.html?from=grid">
+    $(".chat_header")
+      .prepend(`              <a class="clickable" href="profile.html?from=grid">
       <img class="back_arrow" src="./assets/icons/back_arrow.png"></img>
     </a>`);
   } else {
-    $(".chat_header").prepend(`              <a href="profile.html?from=post">
+    $(".chat_header")
+      .prepend(`              <a class="clickable" href="profile.html?from=post">
       <img class="back_arrow" src="./assets/icons/back_arrow.png"></img>
     </a>`);
   }
